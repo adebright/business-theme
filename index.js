@@ -35,4 +35,33 @@ AIL.toggle = (function(target , content , errorHandler  , ...icons) {
         return 
     }
 })(".tabber" , ".tab-content" , console.log , "fa fa-chevron-down") 
+// Working on full-width navigation 
+// AIL.toggleMobile = (function(target , content , errorHandler , ...icons){
 
+// })()
+
+var Mobile = /** @class */ (function () {
+    function Mobile(element) {
+        this.element = element;
+    }
+    Mobile.prototype.toggle = function (event) {
+        var target = event.target.classList;
+        if (target.contains("fa")) {
+            Mobile.root.classList.toggle("mobile-hide");
+            // Mobile.slider.style.opacity = "0.25";
+            target.toggle("fa-bars")
+            target.toggle("fa-close")
+        }
+    };
+    Mobile.prototype.addEventListener = function (type, e) {
+        return addEventListener(type, e);
+    };
+    Mobile.root = document.querySelector(".navo");
+    // Mobile.slider = document.querySelector("#chronicle-slide");
+    return Mobile;
+}());
+
+var mobileNav = new Mobile("#navbar-toggler");
+mobileNav.addEventListener("click", function (event) {
+    mobileNav.toggle(event);
+});

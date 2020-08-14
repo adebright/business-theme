@@ -557,9 +557,22 @@
     position : fixed ; 
     top : 0 ; 
     left : 0 ; 
-    background : #f2f2f2 ; 
-    height : 100% ; 
-    width : 45%;
+    background: #2e3d49;
+    height : 100vh ; 
+    width : 75%;
+}
+.nav-link  {
+  margin-bottom: 1rem;
+}
+.nav-link a {
+  text-decoration: none; 
+  color : rgba(255 , 255 , 255 , 0.65);
+}
+.mobile-login {
+  border : none ; 
+  outline : none ; 
+  border : 1px solid #fff;
+  padding : 10px 20px;
 }
 .mobile-hide {
     display : none;
@@ -781,4 +794,13 @@ input:focus {
 }
 .active {
   display : block;
+}
+.shadow-light {
+  box-shadow: 5px 3px 4px 1px #ccc;
+}
+.shadow-up {
+  box-sizing: 0px 0px 4px 3px #ccc;
+}
+.shadow-float {
+  box-shadow: 3px 3px 3px 0px grey;
 }
