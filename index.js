@@ -46,7 +46,7 @@ var Mobile = /** @class */ (function () {
     }
     Mobile.prototype.toggle = function (event) {
         var target = event.target.classList;
-        if (target.contains("fa")) {
+        if (target.contains("toggler-icon")) {
             Mobile.root.classList.toggle("mobile-hide");
             // Mobile.slider.style.opacity = "0.25";
             target.toggle("fa-bars")
