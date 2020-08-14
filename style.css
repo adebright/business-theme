@@ -597,7 +597,9 @@
   flex : row wrap;
   justify-content: space-between;
 }
-
+.w-100 {
+  width : 100%;
+}
 .m-r-1 {
   margin-right : 1rem
 }
@@ -655,4 +657,128 @@
 }
 .bold-700 {
   font-weight : 700
+}
+.outside > li{
+  list-style-position: outside;
+} 
+.footer-list {
+  display : block
+}
+.footer-dark {
+  background : rgba(0 , 0 , 0 , 0.95) ; 
+}
+.footer-dark-light {
+  background : rgba(0 , 0 , 0 , 0.85) ; 
+}
+.no-margin-bottom  , .no-margin-bottom  p {
+  margin-bottom: 0!important;
+}
+.img-circle {
+  width : 60px;
+  height:60px ; 
+  border : 1px solid #fa0;
+  border-radius: 50%;
+}
+.border-bottom {
+  border-bottom: .5px solid #000;
+}
+.d-nothing {
+  display : none;
+}
+form {
+  box-shadow: -1px -1px 0px 0 #fff; 
+  padding : 20px;
+  background: #fff;
+  border-radius: 5px!important;
+  font : .95rem "Segoe UI" , sans-serif;
+  font-weight: 350;
+  
+}
+.justify-content-center {
+  margin : 0 auto ;
+  padding-top : 2rem;
+ 
+}
+.input-field {
+width : 100%;
+display : inline-block ; 
+margin : 4px 0;
+padding : 4px 4px;
+border : .5px solid #ccc;
+box-shadow: border-box;
+
+} 
+.error {
+  color : #f00;
+}
+.bright-form label {
+  font-size : .85rem;
+  font-weight: 350;
+}
+.bright-form h1 {
+  color : rgba(0, 0, 0, 0.95) ; 
+  font : 1rem "Segoe UI" , Helvetica ,sans-serif;
+  font-weight: 500;
+} 
+.img-rounded {
+  width : 50px;
+  height: 50px;
+  border-radius: 50%; 
+  border : none;
+}
+input[type="submit"] , .processing{
+  background : rgb(10, 114, 146);
+  color : #fff;
+  border : none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+input:focus {
+  border : none!important;
+}
+.processing {
+  display : none ; 
+}
+.active-now {
+  display : block;
+  background : rgb(10, 114, 146)!important;
+  color : #fff;
+  border : none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 1rem;
+} 
+.d-column {
+  flex-direction: column;
+}
+.border-bottom-white {
+  border-bottom: 1px solid #fff;
+}
+.footer-text h5 {
+  color : #fff;
+}
+.footer-text a {
+  text-decoration: none;
+  color : #fff ; 
+  margin-bottom: .95rem;
+} 
+.fixed-top {
+  position : fixed ; 
+  top : 0 ; 
+  left : 0 ; 
+  width : 100% ; 
+  z-index : 99999;
+}
+.after-fixed-elem {
+  padding-top : 3rem;
+}
+.m-r-2{
+  margin-right: 1.2rem;
+}
+.tab-content {
+  display : none;
+}
+.active {
+  display : block;
 }
