@@ -35,10 +35,6 @@ AIL.toggle = (function(target , content , errorHandler  , ...icons) {
         return 
     }
 })(".tabber" , ".tab-content" , console.log , "fa fa-chevron-down") 
-// Working on full-width navigation 
-// AIL.toggleMobile = (function(target , content , errorHandler , ...icons){
-
-// })()
 
 var Mobile = /** @class */ (function () {
     function Mobile(element) {
@@ -65,3 +61,29 @@ var mobileNav = new Mobile("#navbar-toggler");
 mobileNav.addEventListener("click", function (event) {
     mobileNav.toggle(event);
 });
+
+AIL.modal = (function(target , content , closer ,  errorHandler ){
+    try {
+        let triggers = AIL.selectAll(target) 
+        let contents = AIL.selectAll(content)
+        let closers  = AIL.selectAll(closer)
+        if (triggers.length < 1) throw new Error("The element is not available")
+        triggers.map((trigger , i) => {
+            trigger.addEventListener("click" , e => { 
+                let currentContent = contents[i]
+                currentContent.style.display = "block"
+                let modalContent = currentContent.firstElementChild
+                let contentWidth = Number(modalContent.getAttribute("data-modal-content-width"))
+                let distanceFromTop = Number(modalContent.getAttribute("data-modal-content-distance-from-top"))
+                modalContent.style.width = contentWidth + "%"
+                modalContent.style.margin = `${distanceFromTop}% auto`
+                closers[i].addEventListener("click" , e => {
+                    currentContent.style.display = "none"
+                })
+            })
+        })
+    }catch(error){
+        errorHandler(error.message) 
+        return 
+    }
+})(".modal-trigger" , ".modal" , ".close" ,  console.error)
