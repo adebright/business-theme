@@ -45,7 +45,7 @@ To follow through with the CSS , you will need to understand the following :
 I use a lot of ES6+ syntax in the ACE AFRICA INTERFACE Library (AIL) , it is advisable you spend time 
 on learning how to work with ES6+.
 The concepts you should pay attention to include but not limited to the following :
-1. Data Storage and Access - Creating variables and scope 
+1. Data Storage and Access - Creating variables and scope rules 
 2. Function  -  Understand the first class nature of function in javascript. The codes in this project favours
 function expression which may include IIFE , arrow functions , and anonymous function over function declaration
 3. Arrays -  Learn how to create  arrays , and understand the working methods of the following : map , filter , 
