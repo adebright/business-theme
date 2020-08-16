@@ -30,19 +30,44 @@
 	<link rel='stylesheet' , href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 	<link href="style.css" media="all" rel="stylesheet">
 </head>
-<body>
+<body class="" style="background: #fefefe;">
     <!--Site Header -->
     <header class="fixed-top w-100 shadow-float">
-        <div class="section-wrapper bg-white">
-            <div class="wrapper">
-                <div class="wrap">
-                    <div class="wrap-1">
+        <div class="section-wrapper">
+            <div class="wrapper bg-white">
+                <div class="wrap justify-content-between">
+                    <div class="wrap-md-4">
                         <h1 class="brand-name">
                             <a class="brand-link">Bigjara</a>
                         </h1>
                     </div>
-                    <div class="wrap-2 mobile-hide mobile-navigation">
-                        <nav class="main-navigation">
+                    <div class="wrap-md-8  para mobile-hide">
+                        <nav class="desktop-navigation mobile-hide">
+                            <ul class="no-style flex justify-content-between pad-top-1">
+                                <li class="nav-link">
+                                    <a href="#" target="_blank">About</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" target="_blank">Why us ?</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" target="_blank" class="main-nav-link">FAQ</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" target="_blank" class="main-nav-link">Services</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" target="_blank" class="main-nav-link">Contact</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" target="_blank" class="main-nav-link">Blog</a>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" target="_blank" class="main-nav-link mobile-login">Login</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="main-navigation d-md-hide grow-width">
                             <h3 class="mobile-brand white-text border-bottom center-text pad-bottom-2 pad-10" >
                                 Bigjara
                             </h3>
@@ -71,7 +96,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="wrap-3 pad-top-1" id="navbar-toggler">
+                    <div class="wrap-md-6 pad-top-1 d-md-hide" id="navbar-toggler">
                         <span class="mobile-toggler" id="toggler">
                             <i class="fa fa-bars toggler-icon"></i>
                         </span>
@@ -81,15 +106,17 @@
         </div>
     </header>
     <section class="after-fixed-elem">
-        <div class="section-wrapper bg-blue-dark pad-top-2 pad-bottom-2">
-            <div class="wrapper">
-                <div class="wrap center-text">
-                    <div class="wrap-1">
-                        <h2 class="hero-title m-b-1-5 white-text bold-700">Business is <br>
-                            Now Digital
+        <div class="section-wrapper">
+            <div class="wrapper bg-blue-dark pad-top-2 pad-bottom-2 
+            grow-animation-ease">
+                <div class="wrap center-text justify-content-between ">
+                    <div class="wrap-md-6 wrap-sm-12 pad-bottom-1 pad-top-1">
+                        <h2 class="hero-title m-b-1-5 white-text bold-700 bounce">Big begins <br>
+                           Small
                         </h2>
-                        <p class="hero-text m-b-1-5 white-text">Lorem ipsum dolor, sit amet consectetur adipisicing
-                             elit. Dolorem, nostrum fugiat.
+                        <p class="hero-text m-b-1-5 white-text">Bigjara is designed and built 
+                            to promote the advancement of digital skills , enhance individual 
+                            liberty using modern tech tools.
                         </p>
                         <button type="button" role="button" 
                          class="button no-outline no-border bg-white blue-text m-r-1 font-1 btn-rounded">
@@ -100,9 +127,9 @@
                            Learn More 
                         </button>
                     </div>
-                    <div class="wrap-2 mobile-hide">
+                    <div class="wrap-md-6 d-nothing show">
                         <figure>
-                            <img src="images/hero-image" class="img-responsive" 
+                            <img src="images/learn.svg" class="w-100" 
                               title="Bigjara Images" alt="Bigjara Hero Image "
                             >
                         </figure>
@@ -113,15 +140,15 @@
     </section>
     <main>
         <section id="servies">
-            <div class="section-wrapper m-b-2 bg-faint pad-top-2 pad-bottom-2">
-                <div class="wrapper">
-                    <h3 class="center-text">Our Services</h3> 
+            <div class="section-wrapper" >
+                <div class="wrapper bg-faint pad-top-2 pad-bottom-2">
+                    <h3 class="center-text fadein">Our Services</h3> 
                     <p class="center-text">Lorem ipsum dolor sit amet consectetur
                          adipisicing elit. 
                     </p>
                     <div class="wrap">
-                        <div class="wrap-1 bg-white m-b-1 pad-10">
-                            <div class="flex">
+                        <div class="wrap-md-4  m-b-1 pad-10">
+                            <div class="flex justify-content-between">
                                 <h3 class="">Graphics <br> Design</h3>
                                 <h3 class="">
                                     <i class="fa fa-key blue-text"></i>
@@ -134,8 +161,8 @@
                             </p>
                             <a href="#" class="service-link">Read More</a>
                         </div>
-                        <div class="wrap-1 bg-white m-b-1 pad-10">
-                            <div class="flex pad-2">
+                        <div class="wrap-md-4  m-b-1 pad-10">
+                            <div class="flex justify-content-between pad-2">
                                 <h3 class="service-title">Website <br> Design</h3>
                                 <h3 class="service-icon flex-item">
                                     <i class="fa fa-bar-chart blue-text"></i>
@@ -148,8 +175,8 @@
                             </p>
                             <a href="#" class="service-link">Read More</a>
                         </div>
-                        <div class="wrap-1 bg-white m-b-1 pad-10">
-                            <div class="flex pad-2">
+                        <div class="wrap-md-4  m-b-1 pad-10">
+                            <div class="flex justify-content-between pad-2">
                                 <h3 class="service-title">Digital <br> Marketing</h3>
                                 <h3 class="service-icon flex-item">
                                     <i class="fa fa-cloud blue-text"></i>
@@ -167,17 +194,17 @@
             </div>
         </section>
         <section id="feature-works">
-            <div class="section-wrapper m-b-2">
-                <div class="wrapper">
-                    <h3 class="center-text">Feature Works</h3> 
+            <div class="section-wrapper">
+                <div class="wrapper bg-faint">
+                    <h3 class="center-text slow-hover">Feature Works</h3> 
                     <p class="center-text">Lorem ipsum dolor sit amet consectetur
-                         adipisicing elit. Ab recusandae tenetur quaerat incidunt,
-                          ratione sed minus, minima fugit nobis neque blanditiis similique
+                         adipisicing elit. 
                     </p>
-                    <div class="wrap">
-                        <div class="wrap-1 center-text">
+                    <div class="wrap pad-bottom-2">
+                        <div class="wrap-md-12 center-text">
                             
-                            <button type="button" role="button" class="button white-text no-outline no-border tabber btn-rounded m-b-1 active-tab">
+                            <button type="button" role="button" 
+                            class="button white-text no-outline no-border from-red-to-yellow tabber btn-rounded m-b-1 active-tab">
                                 Peco Deluxe
                             </button>
                        
@@ -212,7 +239,7 @@
                             </button>                 -->
                             
                         </div>
-                        <div class="wrap-2">
+                        <div class="wrap-md-12">
                             <div class="tab-content">
                                 <img src="images/logo.png" class="img-responsive">
                             </div>
@@ -228,29 +255,29 @@
             </div>
 
         </section>
-        <section id="call-to-act">
+        <div id="call-to-act" class="section-wrapper">
             <div class="wrapper bg-blue-dark pad-bottom-2 pad-top-2">
                 <div class="wrap">
-                    <div class="wrap-1 white-text center-text">
+                    <div class="wrap-md-6 white-text center-text">
                         <h4>Have you tried our service ?</h4>
                         <p>Benefit from the services we offer to boost sales</p>
                         
                     </div>
-                    <div class="wrap-1 white-text center-text">
+                    <div class="wrap-md-6 white-text center-text">
                         <a type="button" role="button" href="#" class="button btn-rounded no-border no-outline bg-white">
                             Request Quote
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section id="testimonials">
-            <div class="section-wrapper pad-top-2 pad-bottom-2 bg-faint">
-                <div class="wrapper center-text">
+            <div class="section-wrapper">
+                <div class="wrapper center-text  pad-top-2 pad-bottom-2 bg-faint">
                     <h3 class="m-b-2">What our customers are saying</h3>
                     <p class="m-b-2">Our customers are ever grateful for using our service</p>
                     <div class="wrap">
-                        <div class="wrap-1 bg-white pad-10 m-b-2">
+                        <div class="wrap-md-4  pad-10 m-b-2">
                             <blockquote>
                                 <span class="fa fa-quote-left blue-text"></span>
                                 <p>I have known Bigjara for who they are and what they offer.
@@ -262,7 +289,7 @@
                                 </figure>
                             </blockquote>
                         </div>
-                        <div class="wrap-1 bg-white pad-10 m-b-2">
+                        <div class="wrap-md-4  pad-10 m-b-2">
                             <blockquote>
                                 <span class="fa fa-quote-left blue-text"></span>
                                 <p>I have known Bigjara for who they are and what they offer.
@@ -274,7 +301,7 @@
                                 </figure>
                             </blockquote>
                         </div>
-                        <div class="wrap-1 bg-white pad-10">
+                        <div class="wrap-md-4  pad-10">
                             <blockquote>
                                 <span class="fa fa-quote-left blue-text"></span>
                                 <p>I have known Bigjara for who they are and what they offer.
@@ -291,12 +318,13 @@
             </div>
         </section>
         <section id="faq">
-            <div class="section-wrapper m-b-2 pad-top-2 pad-bottom-2">
-                <div class="wrapper ">
+            <div class="section-wrapper ">
+                <div class="wrapper bg-faint pad-top-2 pad-bottom-2">
                     <h3 class="center-text">Frequently Asked Questions</h3>
                         <p class="center-text">Questions are meant to make things clearer for everyone</p>
-                    <div class="wrap">
-                        <div class="wrap-1 pad-top-1  border-bottom">
+                    <div class="wrap justify-content-between">
+                        <div class="wrap-md-3"></div>
+                        <div class="wrap-md-6 pad-top-1  border-bottom">
                            <div class="flex">
                             <h4 class="m-r-1"><i class="fa fa-chevron-right tabber"></i></h4>
                             <h4>What is the question</h4> 
@@ -310,32 +338,23 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="wrap-1 pad-top-1  border-bottom">
-                            <div class="flex">
-                                <h4 class="m-r-1"><i class="fa fa-chevron-right tabber"></i></h4>
-                                <h4>What is the question</h4> 
-                             </div>
-                             <div class="tab-content">
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                      Cumque blanditiis eius impedit ipsam praesentium facere quasi perferendis, 
-                                     consectetur beatae reiciendis velit dolorem quia, porro unde! 
-                                     Voluptatibus quia temporibus porro natus.
-                                 </p>
-                             </div>
-                         </div>
-                         <div class="wrap-1 pad-top-1  border-bottom">
-                            <div class="flex">
-                                <h4 class="m-r-1"><i class="fa fa-chevron-right tabber"></i></h4>
-                                <h4>What is the question</h4> 
-                             </div>
-                             <div class="tab-content">
-                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                      Cumque blanditiis eius impedit ipsam praesentium facere quasi perferendis, 
-                                     consectetur beatae reiciendis velit dolorem quia, porro unde! 
-                                     Voluptatibus quia temporibus porro natus.
-                                 </p>
-                             </div>
-                         </div>
+                        <div class="wrap-md-3"></div>
+                        <div class="wrap-md-3"></div>
+                        <div class="wrap-md-6 pad-top-1  border-bottom">
+                           <div class="flex">
+                            <h4 class="m-r-1"><i class="fa fa-chevron-right tabber"></i></h4>
+                            <h4>What is the question</h4> 
+                            
+                            </div>
+                            <div class="tab-content">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                     Cumque blanditiis eius impedit ipsam praesentium facere quasi perferendis, 
+                                    consectetur beatae reiciendis velit dolorem quia, porro unde! 
+                                    Voluptatibus quia temporibus porro natus.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wrap-md-3"></div>
                     </div>
                 </div>
             </div>
@@ -343,10 +362,10 @@
     </main>
     <footer>
         <section id="contact">
-            <div  class="section-wrapper footer-dark-light pad-top-2 pad-bottom-2">
-                <div class="wrapper">
+            <div  class="section-wrapper">
+                <div class="wrapper footer-dark-light pad-top-2 pad-bottom-2">
                     <div class="wrap">
-                        <div class="wrap-1 m-b-1">
+                        <div class="wrap-md-6 m-b-1">
                             <h4 class="white-text center-text">Contact us</h4> 
                             <form class="" action="/" name="contact-form" id="">
                                 <label for="username">Full Name</label>
@@ -358,24 +377,24 @@
                                 <input type="submit" class="input-field" value="Send">
                             </form>
                         </div>
-                    </div>
-                    <div class="wrap-1 white-text">
-                        <address class="no-margin-bottom">
-                            <strong>Office Address</strong>
-                            <p > We are located at 36 Doyin Omololu Street , Alapere-Ketu 
-                                <br> Lagos State
-                            </p>
-                            <p><i class="fa fa-phone"></i> 0057542479</p>
-                            <p><i class="fa fa-file m-r-2"> adetight@gmail.com</i></p>
-                        </address>
+                        <div class="wrap-md-6 white-text pad-10">
+                            <address class="no-margin-bottom">
+                                <h4><strong>Office Address</strong></h4>
+                                <p > We are located at 36 Doyin Omololu Street , Alapere-Ketu 
+                                    <br> Lagos State
+                                </p>
+                                <p><i class="fa fa-phone"></i> 0057542479</p>
+                                <p><i class="fa fa-file m-r-2"> adetight@gmail.com</i></p>
+                            </address>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="section-wrapper footer-dark">
-            <div class="wrapper">
+        <div class="section-wrapper">
+            <div class="wrapper footer-dark">
                 <div class="wrap d-column pad-top-2 pad-bottom-2 m-b-2">
-                    <div class="wrap-1 footer-text border-bottom-white m-b-1">
+                    <div class="wrap-md-3 footer-text border-bottom-white m-b-1">
                         <h5 class="footer-menu-heading">About Bigjara</h5>
                         <a class="footer-list" href="#">Our values</a>
                         <a class="footer-list" href="#">Our partners</a>
@@ -383,7 +402,7 @@
                         <a class="footer-list" href="#">Work at Bigjara</a>
                         <a class="footer-list" href="#">Blog</a>
                     </div>
-                    <div class="wrap-1 footer-text border-bottom-white m-b-1">
+                    <div class="wrap-md-3 footer-text border-bottom-white m-b-1">
                         <h5 class="footer-menu-heading">Core Focus</h5>
                         <a class="footer-list" href="#">HCI</a>
                         <a class="footer-list" href="#">Front End Engineering</a>
@@ -391,7 +410,7 @@
                         <a class="footer-list" href="#">Mobile Computing</a>
                         </ul>
                     </div>
-                    <div class="wrap-1 footer-text border-bottom-white m-b-1">
+                    <div class="wrap-md-3 footer-text border-bottom-white m-b-1">
                         <h5 class="footer-menu-heading">Need Help ? </h5>
                         <a class="footer-list" href="#">FAQs</a>
                         <a class="footer-list" href="#">Training System</a>
@@ -400,7 +419,7 @@
                         <a class="footer-list" href="#">Hostel Allocation</a>
                         </ul>
                     </div>
-                    <div class="wrap-1 footer-text border-bottom-white m-b-1">
+                    <div class="wrap-md-3 footer-text border-bottom-white m-b-1">
                         <h5 class="footer-menu-heading">Important Read</h5>
                         <a class="footer-list" href="#">T&Cs</a>
                         <a class="footer-list" href="#">Privacy Policy</a>
@@ -411,14 +430,13 @@
                     </div>
                 </div>
                 <div class="flex section-wrapper white-text center-text">
-                    <p><i class="fa fa-facebook"></i></p>
-                    <p><i class="fa fa-instagram"></i></p>
+                    <p><i class="fa fa-facebook m-r-1"></i></p>
+                    <p><i class="fa fa-instagram m-r-1"></i></p>
                     <p><i class="fa fa-twitter"></i></p>
                 </div>
-                <p class="center-text white-text bg-parent">&copy; Copyright Bigjara 2020</p>
+                <p class="center-text font-1 bold-250 white-text pad-bottom-1 no-margin-bottom">&copy; Copyright Bigjara 2020</p>
             </div>
         </div>
-        
     </footer>
     <script src="index.js"></script>
 </body>

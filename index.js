@@ -39,6 +39,7 @@ var Mobile = /** @class */ (function () {
         var target = event.target.classList;
         if (target.contains("toggler-icon")) {
             Mobile.root.classList.toggle("mobile-hide");
+            console.log(event.target)
             target.toggle("fa-bars")
             target.toggle("fa-close")
         }
@@ -46,7 +47,7 @@ var Mobile = /** @class */ (function () {
     Mobile.prototype.addEventListener = function (type, e) {
         return addEventListener(type, e);
     };
-    Mobile.root = document.querySelector(".mobile-navigation");
+    Mobile.root = document.querySelector(".para");
     
     return Mobile;
 }());
@@ -55,95 +56,95 @@ var mobileNav = new Mobile("#navbar-toggler");
 mobileNav.addEventListener("click", function (event) {
     mobileNav.toggle(event);
 });
-const users = [
-    {
-        name : "Adeleke Bright" , 
-        role : "Software Architect" , 
-        gender : "Male" , 
-        avatar : "images/kids.jpg"
-    } , 
-    {
-        name : "Odun Ipenko" , 
-        role : "Software Developer" , 
-        gender : "Male" , 
-        avatar : "images/oldman.jpg"
-    } , 
-    { 
-        name : "Arole Ipenko" , 
-        role : "System Administrator" , 
-        gender : "Female" , 
-        avatar : "images/gummy.jpg"
-    }
-]
-let testimonialArea = document.querySelector(".testimonial-display")
-let counter = 0 
-const launchFirstSlide = ((parent) =>{
-    testimonialArea.innerHTML = 
-    ` 
-    <blockquote>
-        <span class="fa fa-quote-left blue-text"></span>
-        <p>${users[0].role}
-        </p>
-        <figure>
-            <img class="img-circle" src="${users[0].avatar}" alt="" title="">
-            <figcaption>${users[0].name}</figcaption>
-        </figure>
-    </blockquote>
-    <div class="flex"> 
-        <p> <i class="white-text fa fa-chevron-left"></i> Previous </p>
-        <p>Next <i class="white-text fa fa-chevron-right"></i></p>
-    </div>
-    `
-    testimonialArea.classList.add("testimonial-active-animated")
-    return parent
-})(testimonialArea)
+// const users = [
+//     {
+//         name : "Adeleke Bright" , 
+//         role : "Software Architect" , 
+//         gender : "Male" , 
+//         avatar : "images/kids.jpg"
+//     } , 
+//     {
+//         name : "Odun Ipenko" , 
+//         role : "Software Developer" , 
+//         gender : "Male" , 
+//         avatar : "images/oldman.jpg"
+//     } , 
+//     { 
+//         name : "Arole Ipenko" , 
+//         role : "System Administrator" , 
+//         gender : "Female" , 
+//         avatar : "images/gummy.jpg"
+//     }
+// ]
+// let testimonialArea = document.querySelector(".testimonial-display")
+// let counter = 0 
+// const launchFirstSlide = ((parent) =>{
+//     testimonialArea.innerHTML = 
+//     ` 
+//     <blockquote>
+//         <span class="fa fa-quote-left blue-text"></span>
+//         <p>${users[0].role}
+//         </p>
+//         <figure>
+//             <img class="img-circle" src="${users[0].avatar}" alt="" title="">
+//             <figcaption>${users[0].name}</figcaption>
+//         </figure>
+//     </blockquote>
+//     <div class="flex"> 
+//         <p> <i class="white-text fa fa-chevron-left"></i> Previous </p>
+//         <p>Next <i class="white-text fa fa-chevron-right"></i></p>
+//     </div>
+//     `
+//     testimonialArea.classList.add("testimonial-active-animated")
+//     return parent
+// })(testimonialArea)
 
-const activeSlide = () => {
-    // testimonialArea.classList.add("testimonial-active-animated")
-    testimonialArea.innerHTML = 
-    ` 
-    <blockquote>
-        <span class="fa fa-quote-left blue-text"></span>
-        <p>${users[counter].role}
-        </p>
-        <figure>
-            <img class="img-circle" src="${users[counter].avatar}" alt="" title="">
-            <figcaption>${users[counter].name}</figcaption>
-        </figure>
-    </blockquote>
-    <div class="flex"> 
-        <p> <i class="white-text fa fa-chevron-left"></i> Previous </p>
-        <p>Next <i class="white-text fa fa-chevron-right"></i></p>
-    </div>
-    `
-    setTimeout(() => {
-        testimonialArea.classList.add("testimonial-active-animated")
-    })
-    return parent
-}
-let nextButton = document.querySelector(".fa-chevron-right") 
+// const activeSlide = () => {
+//     // testimonialArea.classList.add("testimonial-active-animated")
+//     testimonialArea.innerHTML = 
+//     ` 
+//     <blockquote>
+//         <span class="fa fa-quote-left blue-text"></span>
+//         <p>${users[counter].role}
+//         </p>
+//         <figure>
+//             <img class="img-circle" src="${users[counter].avatar}" alt="" title="">
+//             <figcaption>${users[counter].name}</figcaption>
+//         </figure>
+//     </blockquote>
+//     <div class="flex"> 
+//         <p> <i class="white-text fa fa-chevron-left"></i> Previous </p>
+//         <p>Next <i class="white-text fa fa-chevron-right"></i></p>
+//     </div>
+//     `
+//     setTimeout(() => {
+//         testimonialArea.classList.add("testimonial-active-animated")
+//     })
+//     return parent
+// }
+// let nextButton = document.querySelector(".fa-chevron-right") 
 
-window.addEventListener("click" , event => {
-    if (event.target.classList.contains("fa-chevron-right")){
-        console.log(counter)
-        if (counter === users.length - 1) {
-            counter = 0
-            activeSlide()
-        } else {
-            counter++
-            activeSlide()
-        }
-    }else  if (event.target.classList.contains("fa-chevron-left")){
-        console.log(counter)
-        if (counter === 0) {
-            counter = users.length - 1
-            activeSlide()
-        } else {
-            counter--
-            activeSlide()
-        }
-    }
-})
+// window.addEventListener("click" , event => {
+//     if (event.target.classList.contains("fa-chevron-right")){
+//         console.log(counter)
+//         if (counter === users.length - 1) {
+//             counter = 0
+//             activeSlide()
+//         } else {
+//             counter++
+//             activeSlide()
+//         }
+//     }else  if (event.target.classList.contains("fa-chevron-left")){
+//         console.log(counter)
+//         if (counter === 0) {
+//             counter = users.length - 1
+//             activeSlide()
+//         } else {
+//             counter--
+//             activeSlide()
+//         }
+//     }
+// })
 
 AIL.modal = (function(target , content , closer ,  errorHandler ){
     try {
